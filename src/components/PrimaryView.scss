@@ -1,0 +1,156 @@
+
+.place{
+    background-color: white;
+    box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    margin: 2px;
+    width: 40%;
+    height: 40%;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    top: 20%;
+    left: 25%;
+    padding: 30px 40px;
+    position: fixed;
+}
+
+.origen {
+    background: none;
+    width: 80%;
+    height: 30px;
+    top: 6%;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+    display: flex;
+    position: absolute;
+    border: none;
+    border-bottom: 2px solid #9999; 
+    margin-bottom: 10px;
+}
+
+.destino {
+    width: 60%;
+    height: 30px;
+    bottom: 65%;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+    justify-content: flex-start;
+    position: absolute;
+    border: none;
+    border-bottom: 2px solid #9999; 
+}
+
+.labDes {
+    position: absolute;
+    pointer-events: none;
+    top: 25%;
+    left: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #9999;
+    font-size: 20px;
+    
+}
+
+.label1{
+    position: absolute;
+    pointer-events: none;
+    top:10%;
+    color: #9999;
+    font-size: 20px;
+}
+
+.destino:focus ~ label
+{
+    top: 55px;
+    left: 40px;
+    color: #ffaa3b;
+    font-size: 15px;
+    font-weight: bold;
+    transition: .2s all;
+}
+
+.origen:focus ~ .label1
+{
+    top: 5px;
+    left: 40px;
+    color: #ffaa3b;
+    font-size: 15px;
+    font-weight: bold;
+    transition: .2s all;
+    
+}
+
+.destino:focus {
+    border-bottom: 2px solid #ffaa3b;
+}
+
+.origen:focus {
+    border-bottom: 2px solid #ffaa3b;
+}
+// div de destino
+.aparecer {
+    top: 30px;
+    position: line;
+    visibility: hidden;
+}
+
+//div de select de pasajeros 
+.Selector-pasajeros{
+    width: 250px;
+    top: 45%;
+    position: absolute;
+    display: inline-block;
+    align-items: flex-end;
+    visibility: hidden;
+}
+.pass{
+    width: 50%;
+    bottom: 2px;
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+.cell{
+    width: 14%;
+    height: 30px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #9999; 
+}
+
+.cell:focus {
+    border-bottom: 2px solid #ffaa3b;
+    transition: .5s all;
+}
+
+//estilo del calendario 
+
+.calendar {
+    cursor: pointer;
+    top: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #9999;
+    position: relative;
+    align-content: flex-end;
+}
+
+.calendar:focus {
+
+    border-bottom: 2px solid #ffaa3b;
+    font-weight: bold;
+    transition: .5s all; 
+}
+
+.calendar-contenedor label {
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    pointer-events: none;
+    color: transparent;
+}
